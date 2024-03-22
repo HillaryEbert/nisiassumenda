@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esnext",
+   "lib": ["es2019", "dom", "esnext.asynciterable"],
+    "importHelpers": true,
+    "declaration": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+    "incremental": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "Node",
+    "jsx": "react",
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "**/*.spec.ts",
+    "node_modules"
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "name": "nisiassumenda",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.10.4",
+    "@babel/eslint-parser": "^7.16.3",
+    "@babel/plugin-proposal-export-namespace-from": "^7.10.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.12.7",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.16.0",
+    "@babel/preset-typescript": "^7.12.7",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/jest": "27.0.2",
+    "@types/node": "^16.9.0",
+    "@types/react": "^17.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
+    "eslint": "^8.6.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "jest": "27.2.4",
+    "lerna": "^4.0.0",
+    "prettier": "^2.5.1",
+    "react": "^17.0.2",
+    "react-test-renderer": "^17.0.2",
+    "ts-jest": "27.0.5",
+    "ts-node": "^10.4.0",
+    "tslib": "^2.3.1",
+    "turbo": "^1.0.24",
+    "typescript": "^4.5.4"
+  },
+  "turbo": {
+    "baseBranch": "origin/trunk",
+    "pipeline": {
+      "build": {
+        "outputs": [
+          "dist/**",
+          "*.tgz"
+        ],
+        "dependsOn": [
+          "^build"
+        ]
+      },
+      "test": {
+        "outputs": [
+          "coverage/**"
+        ],
+        "dependsOn": []
+      },
+      "lint": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": []
+      },
+      "dev": {
+        "cache": false
+      },
+      "clean": {
+        "cache": false
+      }
+    }
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "author": "CoraOlson",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HillaryEbert/nisiassumenda.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HillaryEbert/nisiassumenda.git/issues"
+  },
+  "homepage": "https://github.com/HillaryEbert/nisiassumenda.git"
+}
